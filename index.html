@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/d249cc78cc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <!---navbar--->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <div>
+        <i class="fa-brands fa-instagram mx-2"></i> 
+        <strong>Instragram</strong>
+      </div>
+    <div class="d-flex justify-content-end">
+      <!-- Button trigger modal -->
+      <button type="button mx-2" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#exampleModal">
+        create a new post
+      </button>  
+      <!-- Modal -->
+      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Create a new post:</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="mb-1">
+                <label for="exampleFormControlTextarea1" class="form-label"> <strong>Caption:</strong></label>
+                <textarea class="form-control" style="color: lightgray;" id="exampleFormControlTextarea1" rows="3">Add the caption of your post here</textarea>
+              </div>
+              <button type="button" class="btn btn-light btn btn-outline-dark my-2"><i class="fa-solid fa-camera"></i></button>
+              <button type="button" class="btn btn-light btn btn-outline-dark my-2"><i class="fa-solid fa-location-dot"></i></button>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Publish</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="btn-group">
+        <button type="button" class="btn btn-secondary dropdown-toggle mx-2" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa-solid fa-gear"></i>
+        </button>
+        <ul class="dropdown-menu dropdown-menu-end">
+          <li><a class="dropdown-item" href="#">Profile</a></li>
+            <li><a class="dropdown-item" href="#">Accesibility</a></li>
+            <li><a class="dropdown-item" href="#">Privacy and Data</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" style="color: red;" href="#">Log out</a></li>
+        </ul>
+      </div>
+     </div>
+    </div>  
+  </div>     
+</nav>
+<!--secondnav-->
+<ul class="nav nav-pills mb-3 justify-content-center" id="pills-tab" role="tablist">
+  <li class="nav-item" role="presentation">
+    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+      <i class="fa-solid fa-table-cells"></i>
+    </button>
+  </li>
+  <li class="nav-item" role="presentation">
+    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+      <i class="fa-solid fa-square"></i>
+    </button>
+  </li>
+</ul>
+<div class="tab-content" id="pills-tabContent">
+  <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">  
+<!--Posts-->
+  <div class="post">
+    <div class="container">
+     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 d-flex justify-content-center">
+      <div class="col mx-1 my-2"><img src="https://picsum.photos/id/169/320/320"></img></div>
+      <div class="col mx-1 my-2"><img src="https://picsum.photos/id/128/320/320"></img></div>
+      <div class="col mx-1 my-2"><img src="https://picsum.photos/id/231/320/320"></img></div>
+     </div>
+    </div>
+    
+    <div class="container">
+     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 d-flex justify-content-center">
+      <div class="col mx-1 my-2"><img src="https://picsum.photos/id//320/320"></img></div>
+      <div class="col mx-1 my-2"><img src="https://picsum.photos/id/257/320/320"></img></div>
+      <div class="col mx-1 my-2"><img src="https://picsum.photos/id/259/320/320"></img></div>
+     </div>
+    </div>
+
+    <div class="container">
+     <div class="row row-cols-1 row-cols-sm-2 row-cols-md-4 d-flex justify-content-center">
+      <div class="col mx-1 my-2"><img src="https://picsum.photos/id/488/320/320"></img></div>
+      <div class="col mx-1 my-2"><img src="https://picsum.photos/id/755/320/320"></img></div>
+      <div class="col mx-1 my-2"><img src="https://picsum.photos/id/1080/320/320"></img></div>
+     </div>
+    </div> 
+  </div> 
+</div>
+<div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+
+<!--feed-->
+<div class="card m-auto my-2" style="width: 30rem;">
+  <div class="card-head d-flex justify-content-between p-2">
+      <h4 class="card-text">My crazy dogs!</h4>
+      <p>08/26</p>
+    </div>
+    <img src="https://picsum.photos/id/169/350/350" class="card-img-top" alt="...">
+    <div class="card-body">
+    <p class="card-text">
+      <strong>204 Likes</strong>
+      <p>This is an example of a very good photo that you can post on Instragram</p>
+      </p>
+    </div>
+  </div>
+
+<div class="card m-auto my-2" style="width: 30rem;">
+  <div class="card-head d-flex justify-content-between p-2">
+    <h4 class="card-text">The greatness of New York</h4>
+    <p>04/09</p>
+  </div>
+  <img src="https://picsum.photos/id/259/350/350" class="card-img-top" alt="...">
+  <div class="card-body">
+    <p class="card-text">
+      <strong>2050 Likes</strong>
+      <p>This is an example of a very good photo that you can post on Instragram</p> </p>
+  </div>
+</div>
+
+<div class="card m-auto my-2" style="width: 30rem;">
+  <div class="card-head d-flex justify-content-between p-2">
+    <h4 class="card-text">A great view</h4>
+    <p>08/10</p>
+  </div>
+  <img src="https://picsum.photos/id/128/350/420" class="card-img-top" alt="...">
+  <div class="card-body">
+    <strong>1420 Likes</strong>
+    <p>This is an example of a very good photo that you can post on Instragram</p>
+  </div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+
+</html>
